@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Victor+Mono:wght@300&display=swap');
+
+body {
+    background: linear-gradient(to bottom right, #8A2BE2, #FFA500);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Victor Mono', monospace;
+    font-size: 32px;
+}
+
+.title {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    height: 70%;
+    border-radius: 20px;
+    background-color: rgb(240, 240, 240);
+    opacity: 0.45;
+}
+
+.main-container-north,
+.main-container-south {
+    margin: 25px 15px 20px 15px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: end;
+}
+
+.main-container-north {
+    height: 65px;
+    margin-left: 30px;
+    margin-right: 20px;
+    background-color: grey;
+}
+
+.main-container-north .result {
+    margin-right: 20px;
+}
+
+.main-container-south {
+    height: 360px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(230, 230, 230);
+}
+
+.main-container-sEast,
+.main-container-sOvest {
+    margin: 10px 5px;
+    display: grid;
+    grid-gap: 20px 20px;
+}
+
+.main-container-sEast {
+    width: 80%;
+    height: 90%;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 20px;
+}
+
+.main-container-sOvest {
+    width: 20%;
+    height: 90%;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+}
+
+.result,
+.cell:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.result {
+    margin-right: 10px;
+}
+
+.cell:hover {
+    background-color: rgb(145, 145, 145);
+    color: black;
+    cursor: pointer;
+}
+
+.cancel:hover {
+    background-color: red;
+}
+
+.equals:hover {
+    background-color: rgb(48, 248, 41);
+    color: black;
+}
+
+.main-container-sOvest .cell {
+    background-color: rgb(123, 123, 123);
+}
